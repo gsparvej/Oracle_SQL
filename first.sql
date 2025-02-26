@@ -47,6 +47,8 @@ from employees
 
 where  department_id=50 and job_id='ST_MAN';
 
+describe employees;
+
 
 
 
