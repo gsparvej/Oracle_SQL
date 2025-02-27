@@ -30,3 +30,20 @@ from employees
 order by salary
 fetch FIRST 5 ROWS ONLY;
 
+
+select concat(concat(last_name, '''s job category is '), job_id) "job"
+from employees
+where substr(job_id,4) ='REP';
+select last_name
+from employees
+where last_name like '_an%';
+
+select last_name
+from employees
+where substr(last_name,2,2)='an';
+
+select last_name
+from employees
+where substr(last_name,-2)='en';
+
+
