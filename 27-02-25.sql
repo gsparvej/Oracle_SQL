@@ -24,3 +24,9 @@ or department_id=80
 and salary > 10000
 order by hire_date desc, last_name desc;
 
+select last_name, job_id,department_id, hire_date, salary
+from employees
+
+order by salary
+fetch FIRST 5 ROWS ONLY;
+
