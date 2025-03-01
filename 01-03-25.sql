@@ -55,12 +55,6 @@ where department_id=20
 or department_id=50
 order by last_name;
 
---3--
-select last_name as employee, salary as monthly_salay
-from employees
-where salary between 5000 and 12000 and department_id=20 and department_id=50
-;
-
 ---3---or
 select last_name as employee, salary as monthly_salay
 from employees
