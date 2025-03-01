@@ -41,4 +41,48 @@ from dual;
 
 
 
+--test
+
+select last_name, salary
+from employees
+where salary not between 5000 and 12000;
+
+
+select last_name,department_id
+from employees
+where department_id=20
+or department_id=50
+order by last_name;
+
+
+select last_name as employee, salary as monthly_salay
+from employees
+where salary between 5000 and 12000 and department_id=20 and department_id=50
+;
+
+
+select  last_name,salary,commission_pct
+from employees
+order by salary desc, commission_pct desc;
+
+select last_name, salary, commission_pct
+from employees
+where commission_pct = '0.2';
+
+
+
+select employee_id, last_name, salary, salary+salary*0.155  as New_Salary
+from employees;
+
+
+
+
+
+
+
+
+
+
+
+
 
