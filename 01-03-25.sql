@@ -71,8 +71,10 @@ where commission_pct = '0.2';
 
 
 
-select employee_id, last_name, salary, salary+salary*0.155  as New_Salary
+select employee_id as employee_number, last_name, salary, salary+salary*0.155  as New_Salary
 from employees;
+
+select * from employees;
 
 
 
