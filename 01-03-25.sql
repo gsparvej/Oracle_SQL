@@ -26,5 +26,19 @@ from dual;
 select round(45.94558,2), round(45.923,0),round(54,-2)
 from dual;
 
+select trunc(45.94558,2), trunc(45.923,0),trunc(54,-2)
+from dual;
+
+select ceil(45.94558) 
+from dual;
+
+select floor(45.94558) 
+from dual;
+
+select mod(200, 100)
+from dual;
+
+
+
 
 
