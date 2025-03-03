@@ -29,5 +29,10 @@ from employees;
  order by 1 desc;
  
  
-
+ 
+select department_id,round(AVG(salary))
+from employees
+GROUP BY department_id
+order by 2 desc
+fetch first 1 row only;
 
