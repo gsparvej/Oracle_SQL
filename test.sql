@@ -17,7 +17,7 @@ where hire_date> '01-jan-08';
 
 
 --4--
-select last_name, job_id, email, phone_number, employee_id
+select *
 from employees
 where employee_id like 150 or  employee_id like 160;
 
