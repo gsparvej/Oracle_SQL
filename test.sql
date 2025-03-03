@@ -38,6 +38,11 @@ select *
 from employees
 where employee_id like 150 or  employee_id like 160;
 
+--4--or
+select *
+from employees
+where employee_id in (150, 160);
+
 
 --5--
 select first_name, salary, commission_pct, hire_date
