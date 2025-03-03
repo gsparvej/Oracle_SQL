@@ -36,3 +36,4 @@ GROUP BY department_id
 order by 2 desc
 fetch first 1 row only;
 
+
