@@ -12,3 +12,15 @@ when 'ST_CLEARK' then 1.15*salary
 else salary end "salary"
 from employees;
 
+
+select last_name, salary,
+case
+when salary<5000 then 'Low'
+when salary<10000 then 'Mediam'
+when salary<20000 then 'Good'
+else 'Excellent' end "review"
+from employees;
+
+
+
+
