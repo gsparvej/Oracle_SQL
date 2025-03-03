@@ -21,6 +21,13 @@ when salary<20000 then 'Good'
 else 'Excellent' end "review"
 from employees;
 
-
+ 
+ select department_id,Max(salary), MIN(salary)
+ from employees
+ GROUP BY department_id
+ HAVING Max(salary)>10000
+ order by 1 desc;
+ 
+ 
 
 
