@@ -19,6 +19,6 @@ NATURAL JOIN countries
 NATURAL JOIN locations
 NATURAL JOIN jobs
 NATURAL JOIN regions
-where salary>6000
+where salary<6000
 order by 2 desc
-fetch FIRST 5 ROWS ONLY;
+ OFFSET 5 ROWS FETCH NEXT 5 ROWS ONLY;
