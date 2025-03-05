@@ -43,7 +43,7 @@ order by 2 desc
  
  
  
- select e.last_name,d.department_id, l.street_address, c.country_name,r.region_id
+ select e.last_name,d.department_id, l.street_address, c.country_name,r.region_id,r.region_name
  from employees e 
  join departments d on e.department_id=d.department_id
  join locations l on d.location_id=l.location_id
