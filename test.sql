@@ -62,7 +62,7 @@ where salary<10000;
 
 --2--
 
-select department_id, round(avg(salary)),count(department_id)
+select department_id, round(avg(salary)),count(department_id),MAX(salary)
  from employees
  GROUP BY department_id
  HAVING max(salary)>12000;
