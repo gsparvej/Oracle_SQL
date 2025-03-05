@@ -15,4 +15,20 @@ hire_date date not null,
 address varchar2(25) not null
 );
 
+
+alter table emp1287799 add(
+department_id number(6),
+department_name varchar2(10)
+);
+
+
+INSERT INTO emp1287799 VALUES (1,'rakib',25000,'05-jan-25','Dhaka',101,'JAVA');
+INSERT INTO emp1287799 VALUES (2,'sakib',26000,'01-feb-25','RAJSHAHI',101,'JAVA');
+INSERT INTO emp1287799 VALUES (3,'eiasin',30000,'12-mar-25','Munshiganj',101,'JAVA');
+INSERT INTO emp1287799 VALUES (4,'Atik',32000,'19-dec-25','Dhaka',101,'JAVA');
+
+
+
 select * from emp1287799;
+
+
