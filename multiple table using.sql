@@ -43,12 +43,10 @@ order by 2 desc
  
  
  
- select c.country_name, d.department_name,l.state_province,r.region_name,
- jo.max_salary,j.start_date
+ select e.last_name,d.department_id, l.street_address, c.country_name,r.region_id
  from employees e 
- join countries c on c.country_id_id=l.country_id
- join departments d on d.department_id=j.department_id
- join job_history j on j.job_id=jo.job_id
- join jobs jo on jo.job_id=e.job_id
- join locations l on l.country_id=c.country_id
- join regions r on r.region_id=c.region_id;
+ join departments d on e.department_id=d.department_id
+ join locations l on d.location_id=l.location_id
+ join countries c on l.country_id=c.country_id
+ join regions r on c.region_id=r.region_id;
+ 
