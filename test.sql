@@ -51,3 +51,42 @@ where salary<10000;
 
 
 
+
+
+
+
+
+
+--05/03/25--
+
+
+--2--
+
+select department_id, round(avg(salary))
+ from employees
+ GROUP BY department_id
+ HAVING max(salary)>12000;
+ 
+
+
+--3--
+select first_name as Name 
+from employees
+where first_name like 'S%';
+
+--4--
+select  avg(salary)
+from employees
+where job_id like '%SA%';
+
+
+
+--5--
+select last_name, hire_date
+from employees
+order by 2 asc;
+
+
+SELECT * FROM employees;
+
+

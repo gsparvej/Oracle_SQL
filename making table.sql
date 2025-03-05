@@ -32,3 +32,5 @@ INSERT INTO emp1287799 VALUES (4,'Atik',32000,'19-dec-25','Dhaka',101,'JAVA');
 select * from emp1287799;
 
 
+
+
