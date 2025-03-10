@@ -26,10 +26,21 @@ INSERT INTO emp1287799 VALUES (1,'rakib',25000,'05-jan-25','Dhaka',101,'JAVA');
 INSERT INTO emp1287799 VALUES (2,'sakib',26000,'01-feb-25','RAJSHAHI',101,'JAVA');
 INSERT INTO emp1287799 VALUES (3,'eiasin',30000,'12-mar-25','Munshiganj',101,'JAVA');
 INSERT INTO emp1287799 VALUES (4,'Atik',32000,'19-dec-25','Dhaka',101,'JAVA');
-
+insert into emp1287799 values (5,'Parvej',35000,'31-jan-25','Mymensingh',101,'JAVA');
+INSERT INTO emp1287799 VALUES (1,'sabbir',27000,'05-feb-22','Dhaka',102,'JAVA');
 
 
 select * from emp1287799;
+select*from emp;
+
+SELECT DISTINCT department_id FROM employees 
+WHERE
+last_name='Smith';
+
+
+
+INSERT INTO emp VALUES (1,'Reja',21000,'reja@gmail.com');
+INSERT INTO emp VALUES (2,'Imran',22000,'imran@gmail.com');
 
 
 
