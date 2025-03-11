@@ -30,5 +30,52 @@ where salary > (
 
 select round(avg(salary))
             from employees;
+            
+            
+            
+select employee_id, last_name
+from employees
+where department_id in(
+                select department_id
+                from employees
+                where last_name like '%u%'
+);
+
+
+select department_id
+                from employees
+                where last_name = '%u%';
+            
+            
+            
+select last_name,department_id, job_id
+from employees 
+NATURAL JOIN departments
+where department_id in(
+ select  department_id from departments
+ where location_id=1700)
+ order by 1
+;
+
+
+select last_name,department_id, job_id
+from employees 
+where department_id in(
+ select  department_id from departments
+ where location_id=1700)
+ order by 1
+;
+select  department_id from departments
+ where location_id=1700;
+
+
+NATURAL JOIN locations
+where location_id=1700;
+
+            
 SELECT
-    * FROM employees;
+    * FROM departments;
+    
+    SELECT
+    * FROM locations;
+    
