@@ -57,6 +57,19 @@ where department_id in(
  order by 1
 ;
 
+select last_name, salary
+from employees
+where manager_id in(
+    select employee_id
+    from employees
+    where last_name='King'
+);
+
+
+
+select employee_id
+from employees
+where last_name= 'King';
 
 select last_name,department_id, job_id
 from employees 
