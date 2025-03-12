@@ -66,45 +66,46 @@ where employee_id in(
 
 
 --2nd test--
---1--
-select * from departments
-where manager_id in (
-                    select employee_id
-                    from employees
-                    
-);
 
---2--
 
-select hire_date 
-from employees
-where hire_date < (
-                select hire_date
-                from employees
-                order by 1 desc
-);
+-- 63. Display details of manager who manages more than 5 employees.
+SELECT FIRST_NAME
+FROM EMPLOYEES
+ WHERE EMPLOYEE_ID IN
+                (SELECT MANAGER_ID 
+                FROM EMPLOYEES
+                GROUP BY MANAGER_ID
+                HAVING COUNT(*)>5);
 
-select hire_date
-                from employees
-                order by 1 desc;
+-- 65. Display the departments into which no employee joined in last two years.
+ SELECT  * FROM DEPARTMENTS
+ WHERE DEPARTMENT_ID NOT IN
+ ( SELECT DEPARTMENT_ID 
+ FROM EMPLOYEES
+ WHERE
+ FLOOR((SYSDATE-HIRE_DATE)/365) < 2 );
 
 
 
 
 
---3--
-
+--  67. Display details of current job for employees who
+--  worked as IT Programmers in the past.
+ SELECT * FROM JOBS
+ WHERE JOB_ID IN
+                (SELECT JOB_ID 
+                FROM EMPLOYEES 
+                WHERE EMPLOYEE_ID IN
+                                (SELECT EMPLOYEE_ID 
+                                 FROM JOB_HISTORY 
+                                WHERE JOB_ID='IT_PROG'));
+ --67 or--                               
 select department_id ,job_id
 from employees
 where employee_id in (
             select employee_id
-            from employees
-            where job_id ='IT_PROG'         
-);
-
-select last_name,employee_id,department_id
-from employees
-where job_id ='IT_PROG';
+            from job_history
+            where job_id ='IT_PROG');  
 
 
 
