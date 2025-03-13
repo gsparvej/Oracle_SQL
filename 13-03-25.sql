@@ -52,6 +52,28 @@ COMMIT;
 
 
 SELECT * FROM retired_employees;
+SELECT * FROM employees;
+    
+SELECT
+    * FROM emp1287799;    
+
+INSERT INTO emp1287799(ename,address,hire_date,eid,department_id, department_name,salary)
+VALUES ('Reja','Chittagong','31-dec-24',6,102,'NT',25000);
+
+ROLLBACK;
+COMMIT;
+
+INSERT INTO emp1287799(ename,address,hire_date,eid,department_id, department_name,salary)
+select last_name,street_address,hire_date,employee_id,department_id,department_name,salary
+from employees
+NATURAL JOIN departments
+NATURAL JOIN locations
+where department_id= 60;
+
+
+COMMIT;
+UPDATE emp1287799 set eid=7,department_id=101
+where eid=104;
     
     
 
