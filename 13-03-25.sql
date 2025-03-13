@@ -86,7 +86,7 @@ having avg(salary)>10000;
 --select department_id,salary 
 --from employees
 --GROUP BY department_id
---having salary ;
+--having max(salary);
     
     
 
