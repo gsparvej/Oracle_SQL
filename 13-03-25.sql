@@ -74,6 +74,18 @@ where department_id= 60;
 COMMIT;
 UPDATE emp1287799 set eid=7,department_id=101
 where eid=104;
+
+
+
+--select job_id
+--from employees
+--where avg(salary)>10000;
+
+
+--select department_id,salary 
+--from employees
+--GROUP BY department_id
+--having salary ;
     
     
 
