@@ -13,4 +13,5 @@ where department_id= (select department_id
 select department_id
                     from emp1287799
                     where department_name='NT';
+                    commit;
                     
