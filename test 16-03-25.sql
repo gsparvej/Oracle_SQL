@@ -44,5 +44,13 @@ CREATE SEQUENCE emp1_eid_seq
         
         
 --6--
-select * from emp1
-where department_id=103;
+select * from departments
+where department_id in(
+            select department_id
+            from employees
+            where job_id='IT_PROG'
+);
+
+select department_id
+            from employees
+            where job_id='IT_PROG';
