@@ -28,4 +28,6 @@ INSERT into emp1287799 VALUES(emp1287799_eid_seq.nextval,'Masud',21000,'11-jul-2
 
 select emp1287799_eid_seq.nextval
 from dual;
+
+
             
