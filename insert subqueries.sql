@@ -20,3 +20,19 @@ where salary > (
 select max(salary)
                  from hr.EMPLOYEES
                  where job_id like 'ST_CLERK';
+                 
+                 
+                 
+                 
+SELECT constraint_name
+from user_constraints;
+
+select* from emp1;
+describe emp1;
+
+alter table emp1
+modify eid number(10);
+
+
+
+modify table 
