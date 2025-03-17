@@ -33,6 +33,3 @@ describe emp1;
 alter table emp1
 modify eid number(10);
 
-
-
-modify table 
