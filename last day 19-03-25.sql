@@ -35,6 +35,6 @@ INSERT into emp1287799 (eid,ename,salary,hire_date,address, department_id,depart
  INSERT into emp1287799 (eid,ename,salary,hire_date,address, department_id,department_name)
  values(emp1287799_eid_seq.nextval,'Raju',28000,'02-feb-23','Dhaka',110,'L');
  
- 
+ commit;
  
  
